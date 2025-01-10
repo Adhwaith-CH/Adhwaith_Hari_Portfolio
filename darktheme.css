@@ -1,0 +1,272 @@
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    background-color: black; /* Set body color to black */
+    color: white; /* Default text color to white */
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  p {
+    color: white; /* Small text color to white */
+  }
+  
+  /* Transition */
+  a, .btn {
+    transition: all 300ms ease;
+  }
+  
+  a {
+    color: orange; /* Link color to orange */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white; /* Change link color to white on hover */
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: orange;
+  }
+  
+  /* Navigation */
+  nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+  }
+  
+  .nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    color: orange; /* Large text color */
+  }
+  
+  .logo {
+    font-size: 2rem;
+    color: orange; /* Logo color */
+  }
+  
+  /* Sections */
+  section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-align: center;
+    color: orange; /* Large text color */
+    opacity: 0.92;
+  }
+  
+  .section__text {
+    align-self: center;
+    text-align: center;
+  }
+  
+  .section__text p {
+    font-weight: 600;
+    color: white; /* Small text color */
+  }
+  
+  /* Buttons */
+  .btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    background-color: black; /* Button background to match theme */
+    color: orange; /* Button text color */
+    border: 0.1rem solid orange; /* Button border to orange */
+  }
+  
+  .btn:hover {
+    background-color: orange;
+    color: black;
+  }
+  
+  /* Borders */
+  .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: black;
+    border-radius: 2rem;
+    border: 0.1rem solid orange; /* Border color to orange */
+    color: white;
+  }
+  
+  .color-container {
+    border-color: orange;
+    background: black;
+  }
+  
+  .project-title {
+    margin: 1rem;
+    color: orange; /* Large text color */
+  }
+  
+  .project-btn {
+    color: orange;
+    border-color: orange;
+  }
+  
+  /* Contact */
+  .contact-info-upper-container {
+    border-radius: 2rem;
+    border: 0.1rem solid orange; /* Border color to orange */
+    background: black;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    color: white;
+  }
+  
+  .contact-info-container p {
+    font-size: larger;
+    color: white; /* Small text color */
+  }
+  
+  .email-icon {
+    height: 2.5rem;
+    color: orange; /* Icon color */
+  }
+  
+  /* Footer */
+  footer {
+    height: 26vh;
+    margin: 0 1rem;
+    color: white;
+  }
+  
+  footer p {
+    text-align: center;
+    color: orange; /* Footer text color */
+  }
+  
+  .highlight {
+    font-weight: bolder;
+    color: orange; /* Highlight text color */
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: black;
+    color: orange; /* Adjusted text color for dark mode */
+  }
+  
+  .whiteText {
+    color: white;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+  
+    .about-containers {
+      flex-wrap: wrap;
+    }
+  
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
+      margin-bottom: 20rem;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+  
+    #hamburger-nav {
+      display: flex;
+    }
+  
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
+      margin-bottom: 20rem;
+    }
+  
+    #profile,
+    .section-container {
+      display: block;
+    }
+  
+    section {
+      margin: 0 5%;
+    }
+  
+    .section__pic-container {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 2rem;
+    }
+  
+    .about-containers {
+      margin-top: 0;
+    }
+  
+    .text-container {
+      text-align: justify;
+      margin: none;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: 40vh;
+    }
+  
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+  
+    article {
+      font-size: 1rem;
+    }
+  
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+  
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+  
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+  
+    .experience-sub-title {
+      font-size: 1.25rem;
+    }
+  
+    .logo {
+      font-size: 1.5rem;
+    }
+  
+    .section__pic-container {
+      width: auto;
+      height: 50vw;
+      justify-content: center;
+    }
+  }
+  
